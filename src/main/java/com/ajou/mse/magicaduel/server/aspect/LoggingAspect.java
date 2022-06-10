@@ -23,14 +23,20 @@ public class LoggingAspect {
     public Object logApi(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         String requestId = UUID.randomUUID().toString();
 
+        // Request
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes())
                 .getRequest();
+        Object[] reqArgs = proceedingJoinPoint.getArgs();
+        String reqString = "None";
+        if (reqArgs.length != 0)
+                reqString = reqArgs[0].toString();
+
         long start = System.currentTimeMillis();
-        logger.info("[{}] Request: {} {}: {}", requestId, request.getMethod(), request.getRequestURL(),
-                proceedingJoinPoint.getArgs()[0].toString());
+        logger.info("[{}] Request: {} {}: {}", requestId, request.getMethod(), request.getRequestURL(), reqString);
 
         Object result = proceedingJoinPoint.proceed();
 
+        // Response
         long end = System.currentTimeMillis();
         logger.info("[{}] Response: {} {}: {} ({}ms)", requestId, request.getMethod(), request.getRequestURL(),
                 result.toString(), end - start);
