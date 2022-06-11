@@ -91,7 +91,7 @@ None
 
 | Key    | Type    | Description        |
 | ------ | ------- | ------------------ |
-| result | Boolean | 회원가입 성공 여부 |
+| result | Boolean | 로그아웃 성공 여부 |
 
 <br></br>
 
