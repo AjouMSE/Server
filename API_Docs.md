@@ -167,7 +167,7 @@ None
 
 # Battle, 전투
 
-## GET - Start
+## POST - Start
 
 ```
 ~/battle/start
