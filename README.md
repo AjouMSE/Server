@@ -19,14 +19,15 @@ Team Project of Ajou Univ. Media Software Engineering Lecture<br></br>
 
 ## User Table
 
-|    Column     |   Type   | Not Null | Auto Increment |     Key     | Default Value |
-| :-----------: | :------: | :------: | :------------: | :---------: | :-----------: |
-|      id       |  bigint  |    O     |       O        | Primary Key |               |
-|     email     | varchar  |          |                |             |               |
-|   nickname    | varchar  |          |                |             |               |
-|   password    | varchar  |          |                |             |               |
-| created_date  | datetime |          |                |             |               |
-| modified_date | datetime |          |                |             |               |
+|     Column     |   Type   | Not Null | Auto Increment |     Key     | Default Value |
+| :------------: | :------: | :------: | :------------: | :---------: | :-----------: |
+|       id       |  bigint  |    O     |       O        | Primary Key |               |
+|     email      | varchar  |          |                |             |               |
+|    nickname    | varchar  |          |                |             |               |
+|    password    | varchar  |          |                |             |               |
+|  created_date  | datetime |          |                |             |               |
+| battle_info_id |  bigint  |          |                | Foreign Key |               |
+| modified_date  | datetime |          |                |             |               |
 
 <br></br>
 
