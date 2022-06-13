@@ -25,8 +25,8 @@ Team Project of Ajou Univ. Media Software Engineering Lecture<br></br>
 |     email      | varchar  |          |                |             |               |
 |    nickname    | varchar  |          |                |             |               |
 |    password    | varchar  |          |                |             |               |
-|  created_date  | datetime |          |                |             |               |
 | battle_info_id |  bigint  |          |                | Foreign Key |               |
+|  created_date  | datetime |          |                |             |               |
 | modified_date  | datetime |          |                |             |               |
 
 <br></br>
