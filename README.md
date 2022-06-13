@@ -25,6 +25,16 @@ Team Project of Ajou Univ. Media Software Engineering Lecture<br></br>
 |     email     | varchar  |          |                |             |               |
 |   nickname    | varchar  |          |                |             |               |
 |   password    | varchar  |          |                |             |               |
+| created_date  | datetime |          |                |             |               |
+| modified_date | datetime |          |                |             |               |
+
+<br></br>
+
+## Battle Info Table
+
+|    Column     |   Type   | Not Null | Auto Increment |     Key     | Default Value |
+| :-----------: | :------: | :------: | :------------: | :---------: | :-----------: |
+|      id       |  bigint  |    O     |       O        | Primary Key |               |
 |     score     |   int    |          |                |             |       0       |
 |      win      |   int    |          |                |             |       0       |
 |     lose      |   int    |          |                |             |       0       |
